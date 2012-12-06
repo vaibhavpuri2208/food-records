@@ -1,0 +1,43 @@
+<span id="status" class="darkred_color"></span>
+
+<%= form_for(@meal, remote:true) do |f| %>
+
+<!--begin
+    <div class="row">
+		<div class="span3">
+			<%= f.label :foodname, "Food Name", class:"label_style" %>
+		</div>	
+		
+		<div class="span3">	
+			<%= f.label :foodtype, "Food Type", class:"label_style" %>
+		</div>
+		
+		<div class="span3">	
+			<%= f.label :mealdate, "Meal Date", class:"label_style" %>
+		</div>
+		
+	
+	</div>
+-->
+	<div class="row" id="meal-rows">
+		<div class="span3">
+			<%= f.text_field :foodname %>
+		</div>	
+	
+		<div class="span3">
+			<%= f.collection_select :category_id, Category.all, :id, :name  %>
+		</div>
+
+		<div class="span3">
+			<%= f.date_select :mealdate %>
+		</div>
+    	
+	<%= f.submit :class=> 'btn btn-success', :value=>'Record Meal' %>
+	
+    </div>
+
+
+
+
+
+<% end %>

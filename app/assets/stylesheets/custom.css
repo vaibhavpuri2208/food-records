@@ -1,0 +1,89 @@
+.navbar-inverse .nav > li > a {
+color: black;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.navbar-inverse .nav > li > a:hover {
+color: gray;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.0);
+}
+
+.navbar-inverse .nav .active > a,
+.navbar-inverse .nav .active > a:hover,
+.navbar-inverse .nav .active > a:focus {
+  color: #ffffff;
+  background-color: #f05323;
+}
+
+#content {
+	margin:  0px  auto;
+	padding: 10px;
+	width:70%;
+	border: 1px solid gray;
+	border-radius: 20px ;
+-moz-border-radius: 20px ;
+}
+
+.label_style
+{
+	font-size: 16px;
+	text-align: left;
+}
+
+
+
+/*Additional Fonts*/
+
+.font_bitter{
+
+font-family: Bitter,"Helvetica Neue",Helvetica,Arial,sans-serif;
+font-weight: bold
+
+}
+
+.font_julius{
+font-family: 'Julius Sans One', serif;
+font-weight: bold;
+
+}
+
+.font_arvo{
+
+font-family: 'Arvo', serif;
+font-weight: bold;
+color:#0c2566;
+}
+
+.font_pt{
+font-family: 'PT Sans', sans-serif;
+}
+
+.light_grey_color{
+color:#606061;
+}
+
+.darkred_color{
+color:#c1272d;
+}
+
+
+
+
+.darkblue_color
+{
+
+color:#0c2566
+}
+
+
+
+.font_abz{
+font-family: 'ABeeZee', sans-serif;
+}
+
+
+.darkblue{
+color: #113D59;}
+
+
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Foodrecord</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<h3 class="darkred_color font_pt" style="text-align:center">IMPROVING YOUR HEALTH STEP BY STEP</h3>
+
+<div id="content">
+
+  <div class="navbar navbar-inverse">
+    <ul class="nav">
+      <li class="active"><a href="/meals/new">Your Food</a></li>
+      <li class=" black_color" style="padding-left:20px;"><a href="/analyse">Analyse</a></li>
+    </ul>
+  </div>
+
+<%= yield %>
+</div>
+</body>
+</html>

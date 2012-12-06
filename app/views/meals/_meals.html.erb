@@ -1,0 +1,39 @@
+<br><br><p id="status" class="darkred_color"></p>
+	
+
+	<div class="row">
+		<div class="span3">
+			<%= label_tag :foodname, "Food Name", class:"label_style" %>
+		</div>	
+		
+		<div class="span3">	
+			<%= label_tag :foodtype, "Food Type", class:"label_style" %>
+		</div>
+		
+		<div class="span3">	
+			<%= label_tag :mealdate, "Meal Date", class:"label_style" %>
+		</div>
+		
+	
+	</div>
+
+
+<% @showmeals.each do |s| %>
+	<div class="row">
+
+
+		<div class="span3">
+			<%= s.foodname %>
+		</div>	
+	
+		<div class="span3">
+			<%= s.category.name  %>
+		</div>
+
+		<div class="span3">
+			<%= s.mealdate.strftime("%a %e,%b %Y") %>
+		</div>
+    	
+	
+    </div>
+<% end %>
