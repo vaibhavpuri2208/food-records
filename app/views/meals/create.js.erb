@@ -1,3 +1,5 @@
 
-$('ul#meal_list:last').append(newcontent)
+arr = $('li:last');
+$(arr[0]).append("<div class='span3'><=% Meal.all.last.foodname%></div>")
+
 $('#status').text('Thanks for your entry!')
