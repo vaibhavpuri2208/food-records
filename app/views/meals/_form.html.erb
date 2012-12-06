@@ -1,24 +1,12 @@
-<span id="status" class="darkred_color"></span>
+<br>
+<span id="status" class="alert">
+</span>
+
+<h4 class="darkred_color"> Add a New Meal Below</h4>	
 
 <%= form_for(@meal, remote:true) do |f| %>
 
-<!--begin
-    <div class="row">
-		<div class="span3">
-			<%= f.label :foodname, "Food Name", class:"label_style" %>
-		</div>	
-		
-		<div class="span3">	
-			<%= f.label :foodtype, "Food Type", class:"label_style" %>
-		</div>
-		
-		<div class="span3">	
-			<%= f.label :mealdate, "Meal Date", class:"label_style" %>
-		</div>
-		
-	
-	</div>
--->
+
 	<div class="row" id="meal-rows">
 		<div class="span3">
 			<%= f.text_field :foodname %>
@@ -29,12 +17,14 @@
 		</div>
 
 		<div class="span3">
-			<%= f.date_select :mealdate %>
+        <%= f.text_field :mealdate %>
 		</div>
+
+
+	</div>
     	
-	<%= f.submit :class=> 'btn btn-success', :value=>'Record Meal' %>
 	
-    </div>
+<%= f.submit :class=> 'btn btn-success', :value=>'Record New Meal' %>
 
 
 
