@@ -1,23 +1,50 @@
 class AnalyseController < ApplicationController
 
 	def calculate
-		@meals = Meal.in_the_last_seven_days
-		@vegmeals = vegmeals.count
+		@chartarray =	[{
+	                        name: 'Veg Meals',
+	                        y: vegmeals,
+	                        sliced: true,
+	                        selected: true
+                    	}, 
+                    	{
+							name: 'Non-Veg Meals',
+                        	y: nonvegmeals
+                    	}]
 
 	
-
-
 	end
 
+	private
+	
 	def vegmeals
-	vegmeals = []
-	@meals.each do |m|	
-		if m.category.name == 'Veg'
-			vegmeals.push(m)
+    Meal.in_the_last_seven_days.each do |m|	
+			m.category.name == 'Veg'
 		end
 	end
-	vegmeals	
-	end
+
+
+
+  def vegmeals
+    vegmeals = []
+    Meal.in_the_last_seven_days.each do |m|  
+      if m.category.name == 'Veg'
+        vegmeals.push(m)
+      end
+    end
+  vegmeals.count  
+  end
+
+def nonvegmeals
+    nonvegmeals = []
+    Meal.in_the_last_seven_days.each do |m|  
+      if m.category.name == 'Non-Veg'
+        nonvegmeals.push(m)
+      end
+    end
+  nonvegmeals.count  
+  end
+
 
 
 end

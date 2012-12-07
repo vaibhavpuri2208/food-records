@@ -11,6 +11,7 @@ class Meal < ActiveRecord::Base
 			end	
 		end
 	last_seven_day_meals
+
 	end
 
 

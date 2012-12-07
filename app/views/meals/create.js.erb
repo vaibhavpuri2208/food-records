@@ -1,5 +1,18 @@
+<p></p>
+arr = $('li:last .span3');
+var content =  "<li><%=Meal.all.last.foodname%></li>";
+$(arr[0]).append(content);
 
-arr = $('li:last');
-$(arr[0]).append("<div class='span3'><=% Meal.all.last.foodname%></div>")
 
-$('#status').text('Thanks for your entry!')
+arr = $('li:last .span3');
+var content =  "<li><%=Meal.all.last.category.name%></li>";
+$(arr[1]).append(content);
+
+
+arr = $('li:last .span3');
+var content =  "<li><%=Meal.all.last.mealdate%></li>";
+$(arr[2]).append(content);
+
+
+
+$('#status').text('Thanks for your entry!');

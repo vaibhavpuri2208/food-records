@@ -11,7 +11,7 @@
 		</div>
 		
 		<div class="span3">	
-			<%= label_tag :mealdate, "Meal Date", class:"label_style" %>
+			<%= label_tag :mealdate, "Meal Date", class:"label_style", :style=>"padding-left:30	px;" %>
 		</div>
 		
 
@@ -33,10 +33,11 @@
 		<div class="span3">
 			<%= s.mealdate.strftime("%a %e,%b %Y") %>
 		</div>
-	<%= link_to image_tag('trash_can.png', size:'20x20'), meal_url(s.id), :method =>'delete' %>
+	<%= link_to image_tag('trash_can.png', size:'15x15'), meal_url(s.id), :method =>'delete' %>
 	    	
 	
     </div>
 </li>
+<p></p>
 <% end %>
 </ul>
