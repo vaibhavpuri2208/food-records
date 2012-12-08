@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(:version => 20121206021325) do
   end
 
   create_table "meals", :force => true do |t|
-    t.integer  "category_id", :limit => 255
+    t.integer  "category_id"
     t.string   "foodname"
     t.date     "mealdate"
     t.datetime "created_at",                 :null => false
