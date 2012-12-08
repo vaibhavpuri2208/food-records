@@ -14,13 +14,14 @@
 //= require jquery_ujs
 //= require jquery-ui
 //= require_tree .
-
 $(function (){
 	$('#meal_mealdate').datepicker();
-	$('.navbar-inverse .nav > li').click(function()
-		{
-			$('li').removeClass('active');
-			$(this).addClass('active');
-		});
+	$('li.blackcolor').click(function(){
+				$(this).removeClass('active');
+				$('li').addClass('active');
+
+			});
 });
 
+			
+			

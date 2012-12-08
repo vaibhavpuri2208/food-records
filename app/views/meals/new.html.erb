@@ -1,2 +1,14 @@
 <%= render 'meals' %>
 <%= render 'form' %>
+
+<script type="text/javascript">
+
+$(function (){
+			$(window).load(function(){
+				$('li').removeClass('active');
+				$('li:first').addClass('active');
+
+			});
+
+});
+</script>
