@@ -31,6 +31,9 @@ gem 'pry'
 
 gem 'jquery-rails'
 
+
+gem 'libv8', '~> 3.11.8'
+
 gem "therubyracer"
 gem "twitter-bootstrap-rails"
 
