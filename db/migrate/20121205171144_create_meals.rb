@@ -4,7 +4,6 @@ class CreateMeals < ActiveRecord::Migration
       t.string :foodtype
       t.string :foodname
       t.date :mealdate
-
       t.timestamps
     end
   end
